@@ -1,0 +1,112 @@
+{
+	"title": "Portfolio",
+	"description": "A collection of my personal projects, showing the latest first.",
+	"projects": [
+		{
+			"id": 6,
+			"label": "Personal Portfolio",
+			"image": "/img/projects/portfolio.png",
+			"description": [
+				"My personal portfolio where you can learn more about me, my projects and skills.",
+				"Blog implemented using Sanity.io CRM."
+			],
+			"links": [
+				{
+					"label": "repo",
+					"src": "https://github.com/HacheRB/hacherb.dev"
+				}
+			],
+			"tech": ["Next.js", "React", "Tailwind", "TypeScript"]
+		},
+		{
+			"id": 5,
+			"label": "CS Playground",
+			"image": "/img/projects/csplayground.png",
+			"description": [
+				"This repository is where I keep track of my progress solving Leetcode style problems, examples and notes of problem-solving patterns and algorithms I have learned along the way."
+			],
+			"links": [
+				{
+					"label": "repo",
+					"src": "https://github.com/HacheRB/cs-playground"
+				}
+			],
+			"tech": ["Algorithms", "Data structures", "Leetcode"]
+		},
+		{
+			"id": 4,
+			"label": "Vanilla Playground",
+			"image": "/img/projects/vanillaplayground.png",
+			"description": [
+				"In this repository is where I experiment with vanilla components to test out ideas and expand my expertise in CSS, HTML and JavaScript."
+			],
+			"links": [
+				{
+					"label": "repo",
+					"src": "https://github.com/HacheRB/vanilla-playground"
+				}
+			],
+			"tech": ["CSS", "HTML", "JavaScript"]
+		},
+		{
+			"id": 3,
+			"label": "GDental",
+			"image": "/img/projects/gdental.png",
+			"bootcamp": true,
+			"description": [
+				"GDental is a CRM built for a dental clinic, comes with a landing page where customers can find information about the clinic and a private section where employees can manage appointments.",
+				"Styled with Vuetify."
+			],
+			"links": [
+				{
+					"label": "front",
+					"src": "https://github.com/anate82/clinica_dental_frontend"
+				},
+				{
+					"label": "back",
+					"src": "https://github.com/anate82/clinica_dental_backend"
+				}
+			],
+			"deploy": "https://gdental.netlify.app/",
+			"youtube": "https://www.youtube.com/watch?v=miVwkDBMGaE",
+			"tech": ["CSS", "HTML", "JavaScript", "Vue.js"]
+		},
+		{
+			"id": 2,
+			"label": "CStudent",
+			"image": "/img/projects/cstudent.png",
+			"bootcamp": true,
+			"description": [
+				"CStudent tries to help students procrastinate less and keep track of their progress on different Udemy courses.",
+				"Implements the Udemy API so you can search and add courses."
+			],
+			"links": [
+				{
+					"label": "repo",
+					"src": "https://github.com/HacheRB/cstudent"
+				}
+			],
+			"youtube": "https://www.youtube.com/watch?v=mJrdK9jb6gE",
+			"tech": ["Bootstrap", "CSS", "HTML", "JavaScript"]
+		},
+		{
+			"id": 1,
+			"label": "Firefighters : The Game",
+			"image": "/img/projects/firefighters.png",
+			"bootcamp": true,
+			"description": [
+				"A vanilla game where your objective is trying to save as many people as possible trapped in a burning building.",
+				"Try to beat your score as difficulty increases!"
+			],
+			"links": [
+				{
+					"label": "repo",
+					"src": "https://github.com/HacheRB/firefighters"
+				}
+			],
+			"deploy": "https://hacherb.github.io/firefighters",
+			"youtube": "https://www.youtube.com/watch?v=-ubuLwLKw2Q",
+			"tech": ["CSS", "HTML", "JavaScript"]
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"name": "hacherb-dev",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"sitemap": "next-sitemap --config next-sitemap.config.js",
+		"vercel-build": "npm run build && npm run sitemap",
+		"check-types": "tsc --noemit",
+		"lint": "eslint . --ignore-path .gitignore --ext .ts,.js,.tsx,.jsx,.json",
+		"prettier": "prettier --config .prettierrc --ignore-path .gitignore \"**/*.+(ts|js|tsx|jsx|json)\"",
+		"format": "npm run prettier -- --write",
+		"check-format": "npm run prettier -- --list-different",
+		"validate": "npm run check-types && npm run format && npm run check-format && npm run lint"
+	},
+	"dependencies": {
+		"@sanity/image-url": "^1.0.1",
+		"js-cookie": "^3.0.1",
+		"next": "12.1.5",
+		"next-i18next": "^11.0.0",
+		"next-sanity": "^0.5.2",
+		"react": "18.0.0",
+		"react-dom": "18.0.0",
+		"react-portable-text": "^0.4.3"
+	},
+	"devDependencies": {
+		"@types/gtag.js": "^0.0.10",
+		"@types/js-cookie": "^3.0.1",
+		"@types/node": "17.0.25",
+		"@types/react": "18.0.6",
+		"@types/react-dom": "18.0.2",
+		"@typescript-eslint/eslint-plugin": "^5.20.0",
+		"@typescript-eslint/parser": "^5.20.0",
+		"autoprefixer": "^10.4.4",
+		"eslint": "8.13.0",
+		"eslint-config-next": "12.1.5",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"husky": "^7.0.4",
+		"next-sitemap": "^2.5.20",
+		"postcss": "^8.4.12",
+		"prettier": "^2.6.2",
+		"prettier-plugin-tailwindcss": "^0.1.10",
+		"tailwindcss": "^3.0.24",
+		"typescript": "4.6.3"
+	}
+}

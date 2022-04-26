@@ -1,0 +1,19 @@
+{
+	"404": "404 - Página no encontrada",
+	"404-description": "No hemos podido encontrar la página que buscas",
+	"copyright": "Todos los derechos reservados",
+	"routes": [
+		{
+			"path": "/about",
+			"name": "acerca"
+		},
+		{
+			"path": "/portfolio",
+			"name": "portfolio"
+		},
+		{
+			"path": "/blog",
+			"name": "blog"
+		}
+	]
+}

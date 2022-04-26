@@ -1,0 +1,19 @@
+{
+	"404": "404 - Page Not Found",
+	"404-description": "Sorry, but the requested page was not found.",
+	"copyright": "All rights reserved",
+	"routes": [
+		{
+			"path": "/about",
+			"name": "about"
+		},
+		{
+			"path": "/portfolio",
+			"name": "portfolio"
+		},
+		{
+			"path": "/blog",
+			"name": "blog"
+		}
+	]
+}

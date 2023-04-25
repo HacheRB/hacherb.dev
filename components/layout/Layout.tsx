@@ -10,7 +10,6 @@ const Layout = ({ children }: childrenProps) => {
 	const router = useRouter()
 	const [showModal, setShowModal] = useState<boolean>(false)
 	const { t } = useTranslation('layout')
-	const copyright: string = t('copyright')
 	const routes: Route[] = t('routes', { returnObjects: true })
 
 	function navigateHomeTop(): void {
@@ -35,7 +34,7 @@ const Layout = ({ children }: childrenProps) => {
 				routes={routes}
 			/>
 			{children}
-			<Footer copyright={copyright} />
+			<Footer />
 		</>
 	)
 }

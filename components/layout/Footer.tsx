@@ -1,15 +1,12 @@
-import { FooterProps } from '../../lib/types'
 import { GithubSocial, LinkedinSocial } from '../../lib/Icons'
 
-const Footer = ({ copyright }: FooterProps) => {
+const Footer = () => {
 	const date = new Date().getFullYear()
 
 	return (
 		<footer id="footer" className="flex h-20 justify-center">
 			<div className="custom-padding flex w-full items-center justify-between">
-				<span className="text-left text-sm font-normal">
-					&#169; {date} {copyright}
-				</span>
+				<span className="text-left text-sm font-normal">2022 - {date}</span>
 				<div className="flex justify-end gap-6 md:gap-8">
 					<a
 						aria-labelledby="github"

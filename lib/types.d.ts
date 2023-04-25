@@ -24,10 +24,6 @@ export interface SideNavProps extends NavProps {
 	onClose: () => void
 }
 
-export interface FooterProps {
-	copyright: string
-}
-
 export interface Route {
 	path: string
 	name: string

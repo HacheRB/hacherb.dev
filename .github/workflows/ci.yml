@@ -1,0 +1,45 @@
+name: 'CI'
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    if: false # disabled
+    name: 'Build, lint, and test'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [latest]
+
+    steps:
+      - name: 'Checkout repo'
+        uses: actions/checkout@v4
+
+      - name: 'Set up pnpm'
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: 'Set up Node LTS'
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: 'Install dependencies'
+        run: pnpm install --frozen-lockfile
+
+      - name: 'Build'
+        run: pnpm build
+
+      - name: 'Lint'
+        run: pnpm lint
+
+      - name: 'Prettier:check'
+        run: pnpm prettier:check
+
+      #  Testing Pending

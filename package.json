@@ -1,47 +1,71 @@
 {
-	"name": "hacherb-dev",
+	"name": "portfolio",
+	"version": "2.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
 		"build": "next build",
-		"sitemap": "next-sitemap --config next-sitemap.config.js",
-		"vercel-build": "npm run build && npm run sitemap",
-		"check-types": "tsc --noemit",
-		"lint": "eslint . --ignore-path .gitignore --ext .ts,.js,.tsx,.jsx,.json",
-		"prettier": "prettier --config .prettierrc --ignore-path .gitignore \"**/*.+(ts|js|tsx|jsx|json)\"",
-		"format": "npm run prettier -- --write",
-		"check-format": "npm run prettier -- --list-different",
-		"validate": "npm run check-types && npm run format && npm run check-format && npm run lint"
+		"check-types": "tsc --noEmit --pretty",
+		"commit": "git-cz",
+		"deploy:vercel": "vercel",
+		"dev": "next dev --turbo",
+		"jest": "jest",
+		"jest:watch": "jest --watch",
+		"lint": "next lint --ignore-path=.gitignore .",
+		"playwright": "playwright test",
+		"playwright:chrome": "playwright test --project=chromium",
+		"playwright:codegen": "playwright codegen",
+		"playwright:debug": "playwright test --debug",
+		"playwright:report": "exec playwright show-report",
+		"playwright:ui": "playwright test --ui",
+		"prepare": "husky install",
+		"prettier": "prettier --write --ignore-path=.gitignore .",
+		"prettier:check": "prettier --check --ignore-path=.gitignore .",
+		"start": "next start"
+	},
+	"lint-staged": {
+		"*": "prettier --write --ignore-path=.gitignore ."
+	},
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/cz-commitlint"
+		}
 	},
 	"dependencies": {
-		"@sanity/image-url": "^1.0.1",
-		"js-cookie": "^3.0.1",
-		"next": "^12.1.6",
-		"next-i18next": "^11.0.0",
-		"next-sanity": "^0.5.2",
-		"react": "^18.1.0",
-		"react-dom": "^18.1.0",
-		"react-portable-text": "^0.4.3"
+		"framer-motion": "10.16.16",
+		"next": "14.0.4",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
 	},
 	"devDependencies": {
-		"@types/gtag.js": "^0.0.10",
-		"@types/js-cookie": "^3.0.2",
-		"@types/node": "17.0.35",
-		"@types/react": "18.0.9",
-		"@types/react-dom": "18.0.5",
-		"@typescript-eslint/eslint-plugin": "^5.26.0",
-		"@typescript-eslint/parser": "^5.26.0",
-		"autoprefixer": "^10.4.7",
-		"eslint": "^8.16.0",
-		"eslint-config-next": "^12.1.6",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.0.0",
-		"husky": "^8.0.1",
-		"next-sitemap": "^2.5.25",
-		"postcss": "^8.4.14",
-		"prettier": "^2.6.2",
-		"prettier-plugin-tailwindcss": "^0.1.11",
-		"tailwindcss": "^3.0.24",
-		"typescript": "^4.7.2"
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@commitlint/cz-commitlint": "^18.4.3",
+		"@playwright/test": "^1.40.1",
+		"@testing-library/jest-dom": "^6.2.0",
+		"@testing-library/react": "^14.1.2",
+		"@types/jest": "^29.5.11",
+		"@types/node": "20.10.5",
+		"@types/react": "18.2.45",
+		"@types/react-dom": "18.2.18",
+		"@vercel/style-guide": "^5.1.0",
+		"autoprefixer": "10.4.16",
+		"commitizen": "^4.3.0",
+		"eslint": "8.56.0",
+		"eslint-config-next": "14.0.4",
+		"eslint-config-prettier": "9.1.0",
+		"husky": "8.0.3",
+		"inquirer": "^8.2.6",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"lint-staged": "15.2.0",
+		"postcss": "8.4.32",
+		"prettier": "3.1.1",
+		"prettier-plugin-tailwindcss": "^0.5.10",
+		"tailwindcss": "3.4.0",
+		"typescript": "5.3.3",
+		"vercel": "33.0.1"
+	},
+	"engines": {
+		"node": ">=20.0.0"
 	}
 }

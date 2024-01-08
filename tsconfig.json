@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "@vercel/style-guide/typescript",
+	"extends": "./node_modules/@vercel/style-guide/typescript",
 	"compilerOptions": {
 		"target": "esnext",
 		"lib": ["dom", "dom.iterable", "esnext"],

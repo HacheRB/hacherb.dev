@@ -3,8 +3,10 @@
 		"bradlc.vscode-tailwindcss",
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
+		"github.vscode-github-actions",
 		"ms-playwright.playwright",
 		"redhat.vscode-yaml",
+		"YoavBls.pretty-ts-errors",
 		"ZixuanChen.vitest-explorer"
 	]
 }

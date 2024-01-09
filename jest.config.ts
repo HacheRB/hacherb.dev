@@ -12,7 +12,7 @@ const config: Config = {
 	clearMocks: true,
 	collectCoverage: true,
 	collectCoverageFrom: [
-		'./app/**/*.{js,jsx,ts,tsx}',
+		'./src/**/*.{js,jsx,ts,tsx}',
 		'!**/*.d.ts',
 		'!**/node_modules/**',
 	],
@@ -29,7 +29,8 @@ const config: Config = {
 	},
 	// A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
 	moduleNameMapper: {
-		'^@/(.*)$': '<rootDir>/$1',
+		'^@/(.*)$': '<rootDir>/src/$1',
+		'^@/public/(.*)$': '<rootDir>/public/$1',
 	},
 	// A list of paths to modules that run some code to configure or set up the testing framework before each test. Delete jest.setup.ts too if you don't need this
 	setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],

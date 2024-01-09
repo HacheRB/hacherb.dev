@@ -14,7 +14,7 @@ export default defineConfig({
 	/* Run tests in files in parallel */
 	fullyParallel: true,
 	/* Fail the build on CI if you accidentally left test.only in the source code. */
-	forbidOnly: !!process.env.CI,
+	forbidOnly: Boolean(process.env.CI),
 	// Limit the number of failures on CI to save resources
 	maxFailures: process.env.CI ? 10 : undefined,
 	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -37,7 +37,7 @@ export default defineConfig({
 
 	/* Run your local dev server before starting the tests */
 	webServer: {
-		command: 'npm run start',
+		command: 'pnpm run start',
 		url: baseURL,
 		timeout: 120 * 1000,
 		reuseExistingServer: !process.env.CI,

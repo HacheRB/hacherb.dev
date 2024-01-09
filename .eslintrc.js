@@ -27,13 +27,21 @@ module.exports = {
 		// Next.js App Router Navigation elements must use default exports
 		{
 			files: [
-				'./middleware.ts',
+				'./src/middleware.ts',
 				'./**/{sitemap,robots}.ts',
 				'./**/{error,layout,not-found,page,}.tsx',
 			],
 			rules: {
 				'import/no-default-export': 'off',
 				'import/prefer-default-export': ['error', { target: 'any' }],
+			},
+		},
+
+		// Config
+		{
+			files: ['./**/*.config.{js,ts}'],
+			rules: {
+				'import/no-default-export': 'off',
 			},
 		},
 

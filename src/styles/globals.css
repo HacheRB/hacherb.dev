@@ -2,29 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	box-sizing: border-box;
-}
-
-html,
-body {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	margin: 0;
-	width: full;
-	min-height: 100vh;
-	font-family:
-		Poppins,
-		Inter,
-		Roboto,
-		Helvetica Neue,
-		sans-serif;
-}
-
-html {
-	scroll-behavior: smooth;
-}
+@import '@/styles/reset.css';
 
 /*  80 px Header, 80px Footer Container Component */
 #container {

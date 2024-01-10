@@ -1,0 +1,30 @@
+{
+	"Layout": {
+		"404": "404 - Page Not Found",
+		"404-description": "Sorry, but the requested page was not found.",
+		"routes": [
+			{
+				"path": "/about",
+				"name": "about"
+			},
+			{
+				"path": "/portfolio",
+				"name": "portfolio"
+			},
+			{
+				"path": "/blog",
+				"name": "blog"
+			}
+		]
+	},
+	"LocaleSwitcher": {
+		"label": "Change language",
+		"locale": "{locale, select, es {Spanish} en {English} other {Unknown}}"
+	},
+	"Home": {
+		"title": "English Home Page"
+	},
+	"NotFoundPage": {
+		"title": "Not Found Page"
+	}
+}

@@ -35,7 +35,7 @@ cd <project-directory>
 3. **Install the dependencies**: This project uses `pnpm` for package management. To install all the dependencies, run the following command:
 
 ```bash
-pnpm i --frozen-lockfile
+pnpm install
 ```
 
 4. **Run the project**: After the installation of the dependencies is complete, you can run the project using the following command:

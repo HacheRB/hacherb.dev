@@ -21,6 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	const locale = useLocale()
+
 	return (
 		// next-themes requires suppressHydrationWarning
 		<html lang={locale} suppressHydrationWarning>

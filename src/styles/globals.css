@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[data-theme='light'] body {
+	/* Tailwind Indigo Palette */
+	--primary-950: 30, 27, 75, 1;
+	--primary-900: 49, 46, 129, 1;
+	--primary-800: 79, 70, 229, 1;
+	--primary-700: 67, 56, 202, 1;
+	--primary-600: 79, 70, 229, 1;
+	--primary-500: 99, 102, 241, 1;
+	--primary-400: 129, 140, 248, 1;
+	--primary-300: 165, 180, 252, 1;
+	--primary-200: 199, 210, 254, 1;
+	--primary-100: 224, 231, 255, 1;
+	--primary-50: 238, 242, 255, 1;
+}
+
+[data-theme='dark'] body {
+	/* WIP */
+	--primary-950: 30, 27, 75, 1;
+	--primary-900: 49, 46, 129, 1;
+	--primary-800: 79, 70, 229, 1;
+	--primary-700: 67, 56, 202, 1;
+	--primary-600: 79, 70, 229, 1;
+	--primary-500: 99, 102, 241, 1;
+	--primary-400: 129, 140, 248, 1;
+	--primary-300: 165, 180, 252, 1;
+	--primary-200: 199, 210, 254, 1;
+	--primary-100: 224, 231, 255, 1;
+	--primary-50: 238, 242, 255, 1;
+}
